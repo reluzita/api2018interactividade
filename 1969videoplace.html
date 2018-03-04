@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <title>interatividade</title>
+  <meta name="description" content="Hello, WebVR! - A-Frame">
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+  <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-text visible="false" position="-0.1 2 -4.5" width="10" color="black" value="Videoplace" rotation="0 0 0" text="side:double;align:center; shader: msdf; font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/bubblegumsans/BubblegumSans-Regular.json">
+      <a-animation attribute="visible" begin="2500" to="true"></a-animation>
+      <a-animation attribute="position" to="0 2 -4.5" begin="2500"></a-animation>
+    </a-text>
+    <a-text position="0 1 -4.5" value="Em 1969, Myron Krueger criou o Videoplace, que capturava imagens do utilizador e projetava-as numa tela em que as pessoas podiam interagir com os objetos e ambientes gerados a computador."
+      width="5" color="#61c5ba" text="side:double;align:center; shader: msdf; font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/bubblegumsans/BubblegumSans-Regular.json"></a-text>
+    <a-sphere position="-2.5 2.3 -4.5" radius="0.4" color="#ffcc00">
+      <a-text position="0.08 -0.17 0.41" rotation="0 0 15" value="1969" color="black" text="side:double;align:center; shader: msdf; font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/bubblegumsans/BubblegumSans-Regular.json"></a-text>
+      <a-animation attribute="rotation" to="0 360 0" begin="2000"></a-animation>
+    </a-sphere>
+    <a-box position="3 0.75 -4.2" rotation="0 -45 0" src="http://www.inventinginteractive.com/wp-content/uploads/2010/03/videoplace_02.jpg"
+      color="white" height="1.5"></a-box>
+    <a-plane position="0 1.5 -4.5" height="3" width="5" color="white"></a-plane>
+    <a-link position="-1 0 4.5" href="1986voz.html" title="1986"></a-link>
+    <a-link position="1 0 4.5" href="index.html" title="Voltar ao inicio"></a-link>
+    <a-ring color="#61c5ba" radius-inner="0.2" radius-outer="1" rotation="-90 0 0"></a-ring>
+    <a-sky src="https://cdn.glitch.com/a9558e41-7873-44f0-97b7-a19f58b28279%2F38733743400_dd89020531_o.jpg?1520183044637"></a-sky>
+    <a-camera position="0 0 0" rotation="0 0 0">
+      <a-cursor color="red" />
+    </a-camera>
+  </a-scene>
+</body>
+
+</html>

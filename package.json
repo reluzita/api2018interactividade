@@ -1,6 +1,6 @@
 {
-  "name": "aframe-hello-world-boilerplate",
-  "description": "Boilerplate with A-Frame's 'Hello, World!' of WebVR.",
+  "name": "aframe-interactividade-museum",
+  "description": "Ines experiment using WebVR.",
   "version": "0.3.0",
   "license": "MIT",
   "scripts": {
