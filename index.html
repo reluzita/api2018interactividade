@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>interatividade</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        
+        <script id="information" type="text/html">
+          <a-box class="information" material= "src: ${thumb}" >  
+          <a-text class="text" position="0 2 0" value="ola" color="#000000"> 
+        </script>
+      </a-assets>
+      
+      <a-entity id="information-circle" layout="type: circle; plane: xz; radius: 5; angle: 45" position="0 0 0">
+        <a-entity template="src: #information" data-thumb="https://cdn.hyperdev.com/click-me.svg?1477239469954"></a-entity>
+        <a-entity template="src: #information" data-thumb="https://cdn.hyperdev.com/drag-in-files.svg?1477153069954"></a-entity>
+        <a-entity template="src: #information" data-thumb="https://cdn.hyperdev.com/paste-me.svg?1477325869954"></a-entity>
+      </a-entity>
+      
+      <a-box src="https://cdn.hyperdev.com/drag-in-files.svg?1477153069954" position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+      <a-sphere src="https://cdn.hyperdev.com/drag-in-files.svg?1477153069954" position="0 3 -5" radius="1.25" color="#EF2D5E" shadow dynamic-body>
+        <a-text value="Interatividade, yay!" color="#4CC3D9" position="0 0 1.5" align="center"></a-text>
+        <a-animation attribute="rotation" to="0 360 0" begin="click"></a-animation>
+      </a-sphere>
+      <a-cylinder src="https://cdn.hyperdev.com/drag-in-files.svg?1477153069954" position="1 0.75 -3" rotation="90 0 0" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow stactic-body></a-plane>
+      <a-sky src="https://cdn.glitch.com/a9558e41-7873-44f0-97b7-a19f58b28279%2F38631735440_67b7af8250_o.jpg?1520004883764"></a-sky>
+      
+      <a-camera position="0 0 0">
+        <a-cursor color="red"/>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>

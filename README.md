@@ -1,2 +1,5 @@
-# api2018interactividade
-Trabalho de APlicações Informaticas (API) na Escola Secundária José Régio (12 CT2 2017/2018)
+# A-Frame Project
+
+Built with [A-Frame](https://aframe.io), a web framework for building virtual reality experiences. Make WebVR with HTML and Entity-Component. Works on Vive, Rift, desktop, mobile platforms.
+
+Click and drag on desktop. Open it on a smartphone and use the device motion sensors. Or [plug in a VR headset](https://webvr.rocks)!
